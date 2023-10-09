@@ -1,0 +1,419 @@
+.header {
+    @apply bg-white;
+
+    &__content {
+
+    }
+
+    &__row {
+        @apply flex max-w-6xl m-0 mx-auto w-full;
+
+        .col {
+            @apply flex grow items-center;
+
+            .image {
+                @apply mr-4;
+            }
+
+            &--right {
+                @apply justify-end;
+
+                .nav__item {
+                    @apply ml-4;
+                }
+            }
+
+            &--center {
+                @apply justify-center;
+
+                .nav__item {
+                    @apply my-8 mx-4 text-base text-black leading-5;
+
+                    &--blue {
+                        @apply text-primary;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &__col {
+        @apply grow;
+    }
+
+    &__icon {
+        @apply h-[2.625rem] w-[2.625rem] fill-none;
+    }
+}
+
+
+.hr {
+    @apply bg-[#E7E7E7];
+}
+
+.nav {
+    @apply flex flex-nowrap text-sm;
+
+    &--right {
+        @apply justify-end;
+    }
+
+    &--footer {
+        @apply flex flex-col;
+
+        &__icon {
+            @apply h-6 w-6 fill-none mr-4;
+        }
+
+        .nav__logo {
+            @apply mb-4;
+        }
+
+        .nav__item {
+            @apply mb-3;
+        }
+
+        .button--dark {
+            @apply bg-black mt-3;
+        }
+
+    }
+
+    &__item {
+        @apply font-medium flex items-center relative;
+    }
+
+
+    &__item--left {
+        @apply mr-6 my-5;
+    }
+
+    &__item--right {
+        @apply mr-0 ml-5 my-5;
+    }
+
+    &__icon {
+        @apply w-2.5 h-1.5 fill-[#637381] ml-1.5;
+    }
+
+    &__start {
+        @apply flex mr-4;
+
+        .nav__item {
+            @apply mr-3;
+        }
+    }
+
+    &__badge {
+        @apply h-[18px] w-[18px] rounded-full px-0 py-0 text-center absolute -right-1 -top-0.5;
+    }
+
+    &__title {
+        @apply flex items-center mb-7;
+
+        .nav__image {
+            @apply mr-4;
+        }
+    }
+
+    &__button {
+        @apply flex items-center py-2.5 px-8;
+
+        .button__text {
+            @apply text-left ml-3.5;
+        }
+    }
+
+}
+
+.circle {
+    @apply fill-[#F4F7FF] stroke-[#E7E7E7] stroke-[0.03125rem];
+}
+
+
+.logo {
+    @apply h-10 w-10;
+}
+
+.image--header {
+    @apply h-[1.375rem] w-[6.5rem];
+}
+
+.banner {
+
+    @apply bg-inherit;
+
+    &__content {
+        @apply max-w-6xl mx-auto my-10;
+    }
+
+    &__image {
+
+    }
+
+    &__box {
+
+        @apply w-full h-full flex justify-between;
+
+        &--left {
+            @apply relative;
+        }
+
+        &--right {
+            @apply ml-[1.875rem];
+        }
+
+        &--up {
+            @apply relative;
+        }
+
+        &--down {
+            @apply relative mt-[1.875rem];
+        }
+    }
+
+    &--sm {
+
+        @apply max-w-[60.625rem] mx-auto;
+
+        .banner__content {
+            @apply m-0 max-w-full flex items-center;
+        }
+
+        .card {
+            @apply mr-14;
+
+            &__title {
+                @apply mt-3.5 mb-6;
+            }
+
+            &__description {
+                @apply mb-10;
+            }
+        }
+    }
+
+    &--reversed {
+        @apply mt-24;
+
+        .card {
+            @apply ml-14 mr-0;
+        }
+
+    }
+}
+
+
+.card {
+
+    &--lg {
+        @apply w-[25.3125rem] h-[16.875rem] absolute inset-y-28 left-16;
+
+        .paragraph {
+            @apply mt-5 mb-10 leading-6;
+        }
+    }
+
+    &--sm {
+        @apply absolute bottom-9 right-9 w-[11.0625rem] h-24 text-right;
+
+        .paragraph {
+            @apply text-black mt-3;
+        }
+    }
+
+    &__price {
+        @apply text-primary;
+    }
+}
+
+.section {
+    @apply bg-white py-28;
+
+    &--xs {
+        @apply py-8;
+    }
+
+    &--sm {
+        @apply pt-20 pb-7;
+    }
+
+    &--gray {
+        @apply bg-[#FAFAFA];
+    }
+
+    &--nav {
+        @apply py-20;
+    }
+
+    &__content {
+        @apply max-w-6xl mx-auto;
+
+    }
+
+    &__header {
+        @apply flex flex-col items-center text-center mb-16;
+    }
+
+    &__divider {
+        @apply border-2 border-primary w-24 h-0.5 my-5;
+    }
+
+    &__description {
+        @apply mt-4;
+    }
+
+    &--blog {
+        .row {
+            @apply flex -mr-7;
+
+            .card {
+                @apply w-4/12 mr-7;
+
+                &__title {
+                    @apply my-4;
+                }
+
+                &__badge {
+                    @apply text-xs font-semibold leading-6 mt-7 inline-block;
+                }
+            }
+
+        }
+    }
+
+    &--bordered {
+        @apply border-[#E7E7E7] border p-0;
+
+        .section__content {
+            @apply flex;
+
+            .card {
+                @apply flex flex-col items-center text-center py-16;
+
+                &--bordered {
+                    @apply border-x border-[#E7E7E7];
+                }
+
+                .title {
+                    @apply mt-7 mb-2.5;
+                }
+            }
+        }
+    }
+
+    &--nav {
+
+    }
+}
+
+.catalog {
+
+    &__content {
+        @apply flex -mr-7;
+    }
+
+    &__item {
+        @apply rounded-lg shadow-md shadow-[#E7E7E7] mr-7 flex flex-col items-center relative;
+    }
+
+    &__name{
+        @apply mt-6 mb-1;
+    }
+
+    &__rate {
+        @apply mt-3.5 mb-6;
+    }
+
+    &__price {
+        @apply text-black;
+
+        .paragraph {
+            @apply text-light;
+        }
+    }
+
+    &__icon {
+        @apply w-[7.5rem] h-5 fill-none;
+    }
+
+    &__button {
+        @apply mb-7;
+
+        &--black {
+            @apply bg-black;
+        }
+    }
+
+    &__badge {
+        @apply absolute top-4 left-4;
+
+        &--red {
+            @apply bg-red-600;
+        }
+
+        &--secondary {
+            @apply bg-secondary;
+        }
+    }
+
+
+}
+
+.arrow {
+    @apply flex mt-16 justify-center;
+
+    &__right {
+        @apply ml-4;
+    }
+
+    &__icon {
+        @apply w-10 h-10 fill-none;
+    }
+}
+
+.product {
+
+    &__content {
+        @apply flex text-center items-center -mr-7;
+    }
+
+    &__card {
+        @apply mr-7 w-3/12;
+
+        .title {
+            @apply mt-5;
+        }
+
+        .paragraph {
+            @apply m-0;
+        }
+    }
+
+    &__button {
+        @apply mt-20 flex justify-center;
+    }
+}
+
+.footer {
+
+    .row {
+        @apply flex items-center justify-center;
+
+        .col {
+            @apply grow;
+        }
+    }
+
+    &__image {
+        @apply mr-4;
+    }
+
+    .copyright {
+        @apply mt-5;
+    }
+}
+
+
+

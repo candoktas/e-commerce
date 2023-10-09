@@ -1,0 +1,38 @@
+@layer components {
+    .button {
+        @apply py-3.5 px-10 bg-primary text-white font-semibold leading-5;
+
+        &--secondary {
+            @apply bg-secondary;
+        }
+
+        &--tertiary {
+            @apply bg-black;
+        }
+
+        &--sm {
+            @apply py-3 px-7.5;
+        }
+
+        &--radius {
+            @apply rounded;
+        }
+
+        &--ellipse {
+            @apply rounded-4xl;
+        }
+
+        &--outlined {
+            @apply bg-transparent text-primary rounded border border-primary;
+        }
+
+        &--green {
+            @apply border-secondary text-secondary;
+        }
+
+        &--black {
+            @apply border-black text-black;
+        }
+
+    }
+}
